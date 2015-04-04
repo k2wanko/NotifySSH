@@ -1,0 +1,15 @@
+{
+  "name": "NotifySSH",
+  "private": true,
+  "version": "0.0.0",
+  "homepage": "",
+  "authors": [
+    "Kazuhiro Kubota <k2.wanko@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "core-elements": "Polymer/core-elements#~0.5.5",
+    "paper-elements": "Polymer/paper-elements#~0.5.5",
+    "polymer": "Polymer/polymer#~0.5.5"
+  }
+}

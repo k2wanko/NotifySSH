@@ -8,15 +8,23 @@ handlers:
   - url: /manifest.json
     static_files: public/manifest.json
     upload: public/manifest.json
-  
+
+  - url: /bower_components
+    static_dir: bower_components
+
   - url: /(.*\.js)
     mime_type: text/javascript
     static_files: public/\1
     upload: public/(.*\.js)
 
+  - url: /(.*\.css)
+    mime_type: text/css
+    static_files: public/\1
+    upload: public/(.*\.css)
+
   - url: /(.*\.(gif|png|jpg))$
     static_files: public/\1
     upload: public/.*\.(gif|png|jpg)$
-  
+
   - url: /.*
     script: _go_app
