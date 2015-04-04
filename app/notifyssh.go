@@ -50,11 +50,18 @@ func device(w http.ResponseWriter, r *http.Request) {
 func handler(w http.ResponseWriter, r *http.Request) {
 
 	c := appengine.NewContext(r)
+	u := user.Current(c)
 
 	data := struct {
 		Title string
+		Name  string
 	}{
 		Title: "NotifySSH",
+		Name:  "",
+	}
+
+	if u != nil {
+		data.Name = u.String()
 	}
 
 	if err := tpl.ExecuteTemplate(w, "index.html", data); err != nil {
