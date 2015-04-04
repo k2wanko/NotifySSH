@@ -5,6 +5,15 @@ api_version: go1
 
 handlers:
 
+  - url: /manifest.json
+    static_files: public/manifest.json
+    upload: public/manifest.json
+  
+  - url: /(.*\.js)
+    mime_type: text/javascript
+    static_files: public/\1
+    upload: public/(.*\.js)
+
   - url: /(.*\.(gif|png|jpg))$
     static_files: public/\1
     upload: public/.*\.(gif|png|jpg)$

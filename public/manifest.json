@@ -1,0 +1,13 @@
+{
+  "name": "NotifySSH",
+  "short_name": "NotifySSH",
+  "icons":[{
+    "src": "images/icon.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }],
+  "start_url": "/status?notify=1",
+  "display": "standalone",
+  "gcm_sender_id": "234372509248",
+  "gcm_user_visible_only": true
+}
