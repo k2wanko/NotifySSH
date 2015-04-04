@@ -5,6 +5,9 @@ api_version: go1
 
 handlers:
 
+  - url: /
+    static_dir: public
+
   - url: /(.*\.(gif|png|jpg))$
     static_files: public/\1
     upload: public/.*\.(gif|png|jpg)$
