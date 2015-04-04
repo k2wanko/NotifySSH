@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="manifest" href="manifest.json">
+    
+    <meta charset="UTF-8"/>
+    <title>Device</title>
+  </head>
+  <body>
+    {{range .Devices }}
+    <p>{{ .Id }}</p>
+    {{end}}
+  </body>
+  <script src="/site-script.js"></script>
+</html>
