@@ -1,0 +1,13 @@
+application: notify-ssh-90306
+version: 1
+runtime: go
+api_version: go1
+
+handlers:
+
+  - url: /(.*\.(gif|png|jpg))$
+    static_files: public/\1
+    upload: public/.*\.(gif|png|jpg)$
+  
+  - url: /.*
+    script: _go_app
