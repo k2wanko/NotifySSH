@@ -1,9 +1,29 @@
 @import url(https://reset5.googlecode.com/hg/reset.min.css);
-[drawer] {
-  background-color: #B99588;
-  border-right: 1px solid #ccc;
+/*Google Fonts*/
+@import url(http://fonts.googleapis.com/css?family=Nixie+One);
+body{
+  margin: 0;
 }
 
-[main] {
-  background-color: #4F7DC9;
+.toolbar {
+  background-color: #00ADF6;
+  color: #fff;
+  font-family: 'Nixie One', cursive;
+}
+
+.toggle-bar {
+  background-color: #000000;
+}
+
+.toggle-button {
+  background-color: #f1f1f1;
+}
+
+[checked] .toggle {
+  background-color: #0f9d58;
+}
+
+#test-send-notify {
+    background: #00adf6;
+    color: white;
 }
