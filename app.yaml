@@ -17,11 +17,14 @@ handlers:
     static_files: public/\1
     upload: public/(.*\.js)
 
+  - url: /(.*\.css)
+    mime_type: text/css
+    static_files: public/\1
+    upload: public/(.*\.css)
+
   - url: /(.*\.(gif|png|jpg))$
     static_files: public/\1
     upload: public/.*\.(gif|png|jpg)$
-
-
 
   - url: /.*
     script: _go_app
